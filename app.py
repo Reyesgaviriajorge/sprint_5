@@ -38,5 +38,5 @@ build_scatter = st.checkbox('Construir un gráfico de dispersión')
 
 if build_scatter:
     st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
-    fig = px.scatter(car_data, x="year", y="price", color="condition")
+    fig = px.scatter(car_data, x="model_year", y="price", color="condition")
     st.plotly_chart(fig, use_container_width=True)
